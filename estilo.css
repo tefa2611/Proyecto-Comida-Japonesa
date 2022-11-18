@@ -91,6 +91,7 @@
     background-image:  radial-gradient(#FEE3D2 0.8500000000000001px, transparent 0.8500000000000001px), radial-gradient(#FEE3D2 0.8500000000000001px, rgba(45, 63, 71, 0.24) 0.8500000000000001px);
     background-size: 34px 34px;
     background-position: 0 0,17px 17px;
+    margin-top: 40px;
 }
 .row
 {
@@ -147,7 +148,136 @@
     object-fit: cover;
     border-radius: 10px;
 }
-
+/*Promoción*/
+.price
+{
+    margin-top: 40px;
+    text-align: center;
+}
+.price__table
+{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+}
+.price__element
+{
+    background-color: #374F5B;
+    text-align: center;
+    border-radius: 10px;
+    width: 330px;
+    padding: 40px;
+    --color-plan: #f8f0f0;
+    --color-price: rgb(165, 180, 189);
+    --bg-cta: #fff;
+    --color-cta: #162933;
+    --color-items: #fff;
+}
+.price__element--best
+{
+    width: 370px;
+    padding: 60px 40px;
+    background-color: #FF756B;
+    --color-plan: rgba(255, 255, 255, 0.918);
+    --color-price: #fff;
+    --bg-cta: #fc5b4f;
+    --color-cta: #FFF;
+    --color-items: #fff;
+}
+.price__name
+{
+    color: var(--color-plan);
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+.price__price
+{
+    font-size: 2.5rem;
+    color: var(--color-price);
+}
+.price__cta
+{
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--bg-cta);
+    font-weight: 600;
+    color: var(--color-cta);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+}
+.price__items
+{
+    margin-top: 35px;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: var(--color-items);
+}
+/*Personas*/
+.person
+{
+    background: #374f5b80;
+    margin-top: 60px;
+    padding: 20px;
+}
+.person__container
+{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+.person__body
+{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+.person__body--show
+{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+.person__img
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+    padding: 20px;
+}
+.person__texts
+{
+    max-width: 700px;
+}
+.person__course
+{
+    background-color: #FF756B;
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+.person__arrow
+{
+    width: 90%;
+    cursor: pointer;
+}
+.person__review
+{
+    color: #0e1a20;
+    font-size: 20px;
+}
 /* Menú */
 #header
 {
