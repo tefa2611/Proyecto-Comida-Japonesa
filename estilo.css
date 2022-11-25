@@ -551,6 +551,16 @@
     {
         color: #FF756B;
     }
+    .info .row
+    {
+        flex-direction: column;
+        position: relative;
+        padding: 0;
+    }
+    .row .col50
+    {
+        width: 100%;
+    }
 }
 @media (max-width:477px) {
     #header 

@@ -1,0 +1,244 @@
+/*Imagen Principal*/
+#contacto 
+{
+    background-image: url(./img/contacto.jpg);
+    width: 100%;
+    height: 45vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#contacto h2
+{
+    color: white;
+}
+#contacto p
+{
+    color: #DEB4A2;
+    font-size: 20px;
+}
+/*Mapa*/
+#locales
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px;
+}
+#locales .informacion
+{
+  width: 40%;
+}
+#locales .informacion span,
+#form-details form span
+{
+  font-size: 12px;
+}
+#locales .informacion h2,
+#form-details form h2
+{
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+  color: #FF756B;
+}
+#locales .informacion h3
+{
+  font-size: 16px;
+  padding-bottom: 15px;
+  color: #162933;
+}
+#locales .informacion li
+{
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+#locales .informacion li i
+{
+  font-size: 14px;
+  padding-right: 22px;
+}
+#locales .informacion li p
+{
+  margin: 0;
+  font-size: 16px;
+  color: #cf8a6c;
+}
+#locales .map
+{
+  width: 55%;
+  height: 400px;
+}
+#locales .map iframe
+{
+  width: 100%;
+  height: 100%;
+}
+/*Form*/
+#form-details
+{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px;
+  border: 1px solid #e1e1e1;
+}
+#form-details form
+{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#form-details form input,
+#form-details form textarea
+{
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+}
+#form-details form button
+{
+  background-color: #162933;
+  color: white;
+  white-space: nowrap;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+}
+#form-details .people div
+{
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+}
+#form-details .people div img
+{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 15px; 
+  border-radius: 50%;
+}
+#form-details .people div p
+{
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+}
+#form-details .people div p span
+{
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #162933;
+}
+/*boletín*/
+#noticias
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(./img/b14.png);
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #162933;
+  padding: 20px;
+}
+#noticias h4
+{
+  font-size: 22px;
+  font-weight: 700;
+  color: #FF756B;
+}
+#noticias p
+{
+  font-size: 14px;
+  font-weight: 600;
+  color: #DEB4A2;
+}
+#noticias p span
+{
+  color: #cf8a6c;
+}
+#noticias .form
+{
+  display: flex;
+  width: 40%;
+}
+#noticias input
+{
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#noticias button
+{
+  background-color: #FF756B;
+  color: white;
+  white-space: nowrap;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+@media (max-width: 799px) {
+
+  #noticias .form
+  {
+    width: 70%;
+  }
+  #form-details
+  {
+    padding: 40px;
+  }
+  #form-details form
+  {
+    width: 50%;
+  }
+}
+@media (max-width: 477px) {
+
+  #noticias
+  {
+    flex-direction: column;
+  }
+  #locales
+  {
+    flex-direction: column;
+  }
+  #locales .informacion
+  {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #locales .map
+  {
+    width: 100%;
+  }
+  #form-details
+  {
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
+  #form-details form
+  {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
