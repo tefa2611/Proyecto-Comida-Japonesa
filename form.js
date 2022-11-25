@@ -8,7 +8,7 @@ document.querySelector('#submit').addEventListener('click',function(){
     let titulo = document.querySelector("#titulo").value;
     let texto = document.querySelector("#texto").value;
 
-    let url = "https://api.whatsapp.com/send?phone=573227038265&text= Hola Comida Japonesa%0A Soy " + nombre + "%0A Mi E-mail es: " + mail + "%0A Quiero hablarles sobre: " + titulo + "%0A Mi mensaje es: " + texto;
+    let url = "https://web.whatsapp.com/send?phone=573227038265&text= Hola Comida Japonesa%0A Soy " + nombre + "%0A Mi E-mail es: " + mail + "%0A Quiero hablarles sobre: " + titulo + "%0A Mi mensaje es: " + texto;
 
     window.open(url);
 });
