@@ -28,14 +28,24 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a class="active" href="#">Productos</a></li>
                 <li><a href="contactos.html">Contacto</a></li>
-                <li id="lg-bag"><a href="#"><i class="far fa-shopping-basket"></i></a></li>
+                <li onmouseover="showCart(this)" style="cursor: pointer;" class="cart" id="lg-bag"><a  href="#"><i class="far fa-shopping-basket"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="#"><i class="far fa-shopping-basket"></i></a> 
+            <a href="#" onmouseover="showCart(this)" style="cursor: pointer;" class="cart"><i class="far fa-shopping-basket"></i></a> 
             <i id="barra" class="fas fa-outdent"></i>  
         </div>
+
+        <div class="cart-products" id="products-id">
+            <p class="close-btn" onclick="closeBtn()">X</p>
+            <h3>Mi carrito</h3>
+            <div class="card-items">
+            </div>
+            <h1 style="font-size: 20px;">Total: <strong class="price-total">0</strong> $</h1>
+            <a class="botonCarritoW" href="https://web.whatsapp.com/send?phone=573124620277">WhatsApp</a>
+        </div>
+
     </section>
 
     <section id="productos">
@@ -192,7 +202,7 @@
 
         </div>
 
-        <div class="pro-preview">
+        <div class="pro-preview products">
 
             <div class="preview" data-target="p-1">
                 <div class="imgBx">
@@ -210,11 +220,11 @@
                             <option>Con wasabi</option>
                             <option>Con palitos</option>
                         </select>
-                        <h2>$20.000</h2>
-                        <div class="botones">
-                            <input type="number" value="1">
-                            <button class="bto" data-id="1">Añadir al carrito</button>
-                        </div>
+                        <h2>20.000</h2>
+
+                        <input class="botones" type="number" value="1">
+
+                        <button class="bto botones" data-id="1">Añadir al carrito</button>
                     </div>
                 </div>
             </div>
@@ -235,11 +245,11 @@
                             <option>Con wasabi</option>
                             <option>Con palitos</option>
                         </select>
-                        <h2>$10.000</h2>
-                        <div class="botones">
-                            <input type="number" value="1">
-                            <button class="bto" data-id="2">Añadir al carrito</button>
-                        </div>
+                        <h2>10.000</h2>
+
+                        <input class="botones" type="number" value="1">
+
+                        <button class="bto botones" data-id="2">Añadir al carrito</button>
                     </div>
                 </div>
             </div>
@@ -260,11 +270,11 @@
                             <option>Con wasabi</option>
                             <option>Con palitos</option>
                         </select>
-                        <h2>$30.000</h2>
-                        <div class="botones">
-                            <input type="number" value="1">
-                            <button>Añadir al carrito</button>
-                        </div>
+                        <h2>30.000</h2>
+
+                        <input class="botones" type="number" value="1">
+
+                        <button class="bto botones" data-id="3">Añadir al carrito</button>
                     </div>
                 </div>
             </div>
@@ -285,11 +295,11 @@
                             <option>Con wasabi</option>
                             <option>Con palitos</option>
                         </select>
-                        <h2>$40.000</h2>
-                        <div class="botones">
-                            <input type="number" value="1">
-                            <button>Añadir al carrito</button>
-                        </div>
+                        <h2>40.000</h2>
+
+                        <input class="botones" type="number" value="1">
+
+                        <button class="bto botones" data-id="4">Añadir al carrito</button>
                     </div>
                 </div>
             </div>
@@ -310,11 +320,11 @@
                             <option>Con wasabi</option>
                             <option>Con palitos</option>
                         </select>
-                        <h2>$30.000</h2>
-                        <div class="botones">
-                            <input type="number" value="1">
-                            <button>Añadir al carrito</button>
-                        </div>
+                        <h2>30.000</h2>
+                        
+                        <input class="botones" type="number" value="1">
+
+                        <button class="bto botones" data-id="5">Añadir al carrito</button>
                     </div>
                 </div>
             </div>
@@ -335,11 +345,11 @@
                             <option>Con wasabi</option>
                             <option>Con palitos</option>
                         </select>
-                        <h2>$50.000</h2>
-                        <div class="botones">
-                            <input type="number" value="1">
-                            <button>Añadir al carrito</button>
-                        </div>
+                        <h2>50.000</h2>
+                        
+                        <input class="botones" type="number" value="1">
+
+                        <button class="bto botones" data-id="6">Añadir al carrito</button>
                     </div>
                 </div>
             </div>
@@ -360,11 +370,11 @@
                             <option>Con wasabi</option>
                             <option>Con palitos</option>
                         </select>
-                        <h2>$20.000</h2>
-                        <div class="botones">
-                            <input type="number" value="1">
-                            <button>Añadir al carrito</button>
-                        </div>
+                        <h2>20.000</h2>
+                        
+                        <input class="botones" type="number" value="1">
+
+                        <button class="bto botones" data-id="7">Añadir al carrito</button>
                     </div>
                 </div>
             </div>
@@ -385,11 +395,11 @@
                             <option>Con wasabi</option>
                             <option>Con palitos</option>
                         </select>
-                        <h2>$30.000</h2>
-                        <div class="botones">
-                            <input type="number" value="1">
-                            <button>Añadir al carrito</button>
-                        </div>
+                        <h2>30.000</h2>
+                        
+                        <input class="botones" type="number" value="1">
+
+                        <button class="bto botones" data-id="8">Añadir al carrito</button>
                     </div>
                 </div>
             </div>
@@ -482,9 +492,20 @@
             defaultMsg : '',
         });
     </script>
+    <script>
+    
+    /*Carrito De Compras*/
+    function showCart(x){
+        document.getElementById("products-id").style.display = "block";
+    }
+    function closeBtn(){
+         document.getElementById("products-id").style.display = "none";
+    }
+    </script>
 
     <script src="./script.js"></script>
     <script type="module" src="./main.js"></script>
+    <script src="./carrito.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="./codigo.js"></script>
