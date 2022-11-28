@@ -532,6 +532,11 @@ footer .derechos
 
 /*Responsive*/
 @media (max-width:799px) {
+
+    #header .logo
+    {
+        width: 200px;
+    }
     
     #navbar 
     {
