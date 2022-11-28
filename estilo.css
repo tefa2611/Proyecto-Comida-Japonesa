@@ -561,14 +561,63 @@
     {
         width: 100%;
     }
+    .titleT
+    {
+        font-size: 1.5em;
+    }
+    .titleT span
+    {
+        font-size: 1.5em;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+    .texto p
+    {
+        font-size: 1em;
+    }
+    .texto
+    {
+        margin-top: 0;
+    }
+    .row .col50 .imgBx
+    {
+        min-height: 250px;
+    }
+    .info
+    {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .person__img 
+    {
+        display: none;
+    }
+    .person__texts .subtitle
+    {
+        font-size: 1em;
+    }
+    .person__texts .person__review
+    {
+        font-size: 15px;
+    }
+    .person
+    {
+        padding: 0;
+    }
+    .person__course
+    {
+        line-height: 2rem;
+    }
 }
 @media (max-width:477px) {
+
     #header 
     {
         padding: 10px 30px 10px 10px;
     }
 }
 @media (max-width:390px) {
+
     #header
     {
         width: 108%;

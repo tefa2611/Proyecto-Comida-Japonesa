@@ -587,7 +587,9 @@ footer .derechos
     {
         color: #FF756B;
     }
-    #productos 
+    #productos,
+    #contacto,
+    #hero
     {
         height: 35vh;
         padding: 14px;
@@ -660,7 +662,9 @@ footer .derechos
     {
         padding: 10px 30px 10px 10px;
     }
-    #productos 
+    #productos,
+    #contacto,
+    #hero 
     {
         padding: 0 20px;
         background-position: 55%;
@@ -671,7 +675,9 @@ footer .derechos
     {
         width: 108%;
     }
-    #productos
+    #productos,
+    #contacto,
+    #hero
     {
         width: 108%;
     }
