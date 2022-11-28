@@ -673,16 +673,16 @@ footer .derechos
 @media (max-width:390px) {
     #header
     {
-        width: 108%;
+        width: 100%;
     }
     #productos,
     #contacto,
     #hero
     {
-        width: 108%;
+        width: 100%;
     }
     footer
     {
-        width: 108%;
+        width: 100%;
     }
 }
